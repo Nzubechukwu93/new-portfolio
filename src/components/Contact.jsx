@@ -38,18 +38,21 @@ const Contact = () => {
         <form ref={form} onSubmit={sendEmail} className="space-y-4">
           <input
             type="text"
+            name="name"
             placeholder="Name"
             className="w-full p-4 rounded-lg border"
           />
 
           <input
             type="email"
+            name="email"
             placeholder="Email"
             className="w-full p-4 rounded-lg border"
           />
 
           <textarea
             rows="5"
+            name="message"
             placeholder="Message"
             className="w-full p-4 rounded-lg border"
           />

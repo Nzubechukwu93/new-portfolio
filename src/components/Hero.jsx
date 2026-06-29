@@ -63,7 +63,7 @@ const Hero = () => {
             </a>
 
             <a
-              href="/Nzube Dev frontend resume.pdf"
+              href="/Nzube_Dev_CV.pdf"
               download
               className="border px-6 py-3 rounded-xl"
             >
