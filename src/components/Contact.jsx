@@ -1,4 +1,32 @@
+import { useRef, useState } from 'react';
+import emailjs from "@emailjs/browser";
+
 const Contact = () => {
+  const form = useRef();
+
+  const [loading, setLoading] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    emailjs.sendForm(
+      "service_0qfjhsh",
+      "template_360p2ne",
+      form.current,
+       "sgkxj_e7uQKI4NZbq"
+    )
+    .then(() => {
+      alert("Message sent successfully!");
+      form.current.reset();
+      setLoading(false);
+    })
+    .catch(() => {
+      alert("Something went wrong.");
+      setLoading(false);
+    });
+  }
   return (
     <section id="contact" className="py-24 px-6">
       <div className="max-w-2xl mx-auto">
@@ -7,7 +35,7 @@ const Contact = () => {
           Contact Me
         </h2>
 
-        <form className="space-y-4">
+        <form ref={form} onSubmit={sendEmail} className="space-y-4">
           <input
             type="text"
             placeholder="Name"
@@ -29,7 +57,7 @@ const Contact = () => {
           <button
             className="bg-blue-600 text-white px-6 py-3 rounded-lg"
           >
-            Send Message
+            {loading ? "Sending..." : "Send Message"}
           </button>
         </form>
 
