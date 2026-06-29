@@ -14,9 +14,31 @@ const Footer = () => {
         </p>
 
         <div className="flex gap-4 mt-4 md:mt-0">
-          <FaGithub size={22} />
-          <FaLinkedin size={22} />
-          <FaTwitter size={22} />
+          <a href="https://github.com/Nzubechukwu93"
+            target="blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-400 transition duration-300"
+            
+          >
+            <FaGithub size={22} />
+          
+          </a>
+          
+          <a href="https://www.linkedin.com/in/nzubechukwu-oriji"
+            target="blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-400 transition duration-300"
+          >
+            <FaLinkedin size={22} />
+          </a>
+
+          <a href="https://x.com/DevZubes"
+            target="blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-400 transition duration-300"
+          >
+            <FaTwitter size={22} />
+          </a>
         </div>
 
       </div>

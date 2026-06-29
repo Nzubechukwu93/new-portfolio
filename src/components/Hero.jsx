@@ -9,6 +9,8 @@ const Hero = () => {
       items-center
       relative
       overflow-hidden
+      pt-28
+      md:pt-20
       bg-gradient-to-br
       from-blue-50
       via-white
@@ -37,6 +39,10 @@ const Hero = () => {
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-center md:text-left" 
+            
+          
         >
           <span className="text-blue-500 font-medium">
             Frontend Developer
@@ -54,10 +60,10 @@ const Hero = () => {
             React and modern frontend technologies.
           </p>
 
-          <div className="flex flex-wrap gap-4 mt-8">
+          <div className="mt-10 flex flex-col sm:flex-row gap-5">
             <a
               href="#projects"
-              className="bg-blue-600 text-white px-6 py-3 rounded-xl"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl transition shadow-lg"
             >
               View Projects
             </a>
@@ -65,7 +71,7 @@ const Hero = () => {
             <a
               href="/Nzube_Dev_CV.pdf"
               download
-              className="border px-6 py-3 rounded-xl"
+              className="border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-8 py-4 rounded-xl transition"
             >
               Download Resume
             </a>
@@ -81,14 +87,17 @@ const Hero = () => {
             src="/profile-img.png"
             alt="Profile"
             className="
-            w-72
-            h-72
+            w-64
+            h-64
+            sm:w-72
+            sm:h-72
             md:w-96
             md:h-96
             rounded-full
             object-cover
             border-4
             border-blue-500
+            shadow-[0_0_40px_rgba(59,130,246,0.4)]
             "
           />
         </motion.div>

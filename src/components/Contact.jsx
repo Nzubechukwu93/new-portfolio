@@ -64,11 +64,11 @@ const Contact = () => {
           </button>
         </form>
 
-        <div className="mt-10">
+        {/* <div className="mt-10">
           <p>Email: nzubechukwuoriji@gmail.com</p>
           <p>GitHub: https://github.com/Nzubechukwu93</p>
           <p>LinkedIn: linkedin.com/in/nzubechukwu-oriji</p>
-        </div>
+        </div> */}
 
       </div>
     </section>
