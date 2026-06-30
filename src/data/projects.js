@@ -6,7 +6,7 @@ const projects = [
     image: "/Login form.PNG",
     tech: ["React", "Tailwind"],
     github: "https://github.com/Nzubechukwu93/React-login-form",
-    demo: "react-login-form-lilac.vercel.app"
+    demo: "https://react-login-form-lilac.vercel.app/"
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const projects = [
     image: "/Eccommerce Ui.PNG",
     tech: ["React", "Tailwind"],
     github: "https://github.com/Nzubechukwu93/react-ecommerce-store",
-    demo: "react-ecommerce-store-eta.vercel.app"
+    demo: "https://react-ecommerce-store-eta.vercel.app/"
   },
   {
     id: 3,
